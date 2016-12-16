@@ -10,6 +10,7 @@ PATH
       jquery-rails
       pg
       rails (~> 5.0.0, >= 5.0.0.1)
+      responders
       sidekiq
       slim-rails
       will_paginate
@@ -235,6 +236,7 @@ DEPENDENCIES
   pg
   pry
   rails_workflow!
+  responders
   rspec-rails
   sinatra
   slim-rails

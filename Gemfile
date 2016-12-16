@@ -10,6 +10,7 @@ gem 'active_model_serializers'
 gem 'guid'
 gem 'will_paginate'
 gem 'activejob'
+gem 'responders'
 
 group :development do
   gem 'sinatra', require: false
