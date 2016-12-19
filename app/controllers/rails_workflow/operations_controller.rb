@@ -5,7 +5,7 @@ module RailsWorkflow
     layout 'rails_workflow/application'
     respond_to :html
 
-    before_action :set_operation,
+    before_filter :set_operation,
                   only: [:show, :edit, :pickup, :continue, :update, :destroy]
 
     before_filter do

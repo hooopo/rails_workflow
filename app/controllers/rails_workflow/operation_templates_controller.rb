@@ -1,8 +1,8 @@
 module RailsWorkflow
   class OperationTemplatesController < ApplicationController
     layout 'rails_workflow/application'
-    before_action :set_operation_template, only: [:show, :edit, :update, :destroy]
-    before_action :set_process_template
+    before_filter :set_operation_template, only: [:show, :edit, :update, :destroy]
+    before_filter :set_process_template
     respond_to :html
 
     before_filter do

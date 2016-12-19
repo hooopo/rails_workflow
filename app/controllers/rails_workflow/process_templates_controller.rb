@@ -3,7 +3,7 @@ module RailsWorkflow
     layout 'rails_workflow/application'
     respond_to :html, :json
 
-    before_action :set_process_template, only: [:show, :edit, :update, :destroy]
+    before_filter :set_process_template, only: [:show, :edit, :update, :destroy]
 
     before_filter do
       @config_section_active = true
